@@ -405,8 +405,9 @@ strong {
 
 
 
-#parallax-nav {
+/*#parallax-nav {*/
 /*-webkit-text-size-adjust: 100%;*/
+/*
     color: #151313;
     font-family: europa;
     font-style: normal;
@@ -423,6 +424,7 @@ strong {
     transition: opacity .3s 0s linear;
     transform: translate3d(0,-50%,0);
 }
+*/
 
 /*document.querySelector("#parallax-nav")*/
 
