@@ -1,0 +1,257 @@
+* {
+outline: 0px dotted lime;
+}
+
+/*
+grey details #afb4bc
+background #bac9d6
+text #206881
+text highlight #174859
+
+details #188CBD
+background #F0F7FA
+text black
+text highlight #ADD6E2
+
+Grey #777
+Black #000
+Dark Grey #111
+White #fff
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
+
+/* parallax */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1, .video_head, .animation_head, .conceptart_head, .about_img {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("img/DSC_0892_crop.jpg");
+    min-height: 100%;
+}
+
+.video_head {
+    background-image: url("img/Fire%20Capture.JPG");
+    min-height: 400px;
+}
+
+.animation_head {
+    background-image: url("img/Capture.JPG");
+    min-height: 400px;
+}
+            
+.conceptart_head {
+    background-image: url("img/Sans%20Fans.png");
+    min-height: 400px;
+}
+
+.about_img {
+    background-image: url("img/20200229_195938.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* parallax */
+
+
+
+
+
+
+
+
+
+/* BOOTSTRAP */
+
+
+
+
+.blue {
+    background-color: #3FB4FF;
+    height: 50px;
+}
+            
+.lime {
+    background-color: #A6D800;
+    height: auto;
+    min-height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOOTSTRAP */
+
+
+
+
+
+
+
+
+
+
+/* Style */
+
+.border {
+    font-size:25px;
+    color: #f7f7f7;
+}
+
+.reel {
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+.reel h3 {
+    text-align:center;
+}
+
+.video_wrapper {
+    margin-top: 50px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    width: 100%;
+}
+
+.video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    border: 0;
+    margin-left: 5%;
+}
+
+.img_wrapper {
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.img_wrapper image {
+    width: 100%;
+    height: auto;
+}
+
+/*grey here*/
+
+.links {
+    color: #777;
+    background-color:white;
+    padding:5px 80px 15px;
+    text-align: center;
+}
+
+.links i {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+
+
+/* Style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img_wrapper:hover .image {
+  opacity: 0.3;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+

@@ -191,7 +191,7 @@ h3 {
     margin-left: 5%;
 }
 
-.img_wrapper {
+/*.img_wrapper {
     margin-top: 50px;
     position: relative;
     height: auto;
@@ -201,7 +201,7 @@ h3 {
 .img_wrapper image {
     width: 100%;
     height: auto;
-}
+}*/
 
 /*grey here*/
 
@@ -229,17 +229,37 @@ h3 {
 
 
 
+.img_wrapper {
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
 
-
-
-
-
+.img_wrapper .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
 
 .img_wrapper:hover .image {
   opacity: 0.3;
 }
 
-.image {
+
+
+
+.gif_wrapper {
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.gif_wrapper .gif {
   opacity: 1;
   display: block;
   width: 100%;
@@ -247,6 +267,301 @@ h3 {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
+.gif_wrapper:hover .gif {
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLL NAV */
+
+
+.Quick-navigation {
+   position: fixed;
+   z-index: 1;
+   margin: 0;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+}
+
+.Quick-navigation-item {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    /*font-size: 1.3em;*/
+    transition: color 0.3s;
+    padding: 0.5em;
+    display: block;
+}
+
+.Quick-navigation-item:hover,
+.Quick-navigation-item.current {
+    color: #FFF;
+}
+
+
+.Scroll-progress-indicator {
+    will-change: opacity, transform;
+    transition: all 0.5s;
+    left: -10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    padding: 2em;
+    transform: translateX(200%) translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Scroll-progress-indicator.visible {
+  transform: translateX(-100%) translateY(-50%);
+  opacity: 1;
+}
+
+
+.Scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    opacity:  0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    outline: none;
+}
+
+.Scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Scroll-to-top:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* scroll nav*/
+
+
+
+
+
+
+
+/* NAV MENU */
+
+/*.hide {
+    display: none;
+}
+    
+.menu:hover .hide {
+    display: inline;
+    color: red;
+}*/
+
+strong {
+    opacity: 0;
+}
+
+.hide {
+    opacity: 0;
+    display: inline;
+}
+
+.menu:hover .hide {
+    opacity: 1;
+    transition: color 0.2s;
+}
+
+
+
+
+
+
+/* nav menu */
+
+
+
+#parallax-nav {
+/*-webkit-text-size-adjust: 100%;*/
+    color: #151313;
+    font-family: europa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .015em;
+    line-height: 1.8em;
+    display: block;
+    position: fixed;
+    z-index: 52;
+    top: 50%;
+    right: 15px;
+    padding: 0 10px 0 0;
+    transition: opacity .3s 0s linear;
+    transform: translate3d(0,-50%,0);
+}
+
+/*document.querySelector("#parallax-nav")*/
+
+
+/* SCROLL NAV ORIGINAL */
+
+/*
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    min-height: 100%;
+    height: 100vh;
+}
+*/
+
+/*.Quick-navigation {
+   position: fixed;
+   z-index: 1;
+   margin: 0;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+}
+
+.Quick-navigation-item {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;*/
+    /*font-size: 1.3em;*/
+   /* transition: color 0.3s;
+    padding: 0.5em;
+    display: block;
+}
+
+.Quick-navigation-item:hover,
+.Quick-navigation-item.current {
+    color: #FFF;
+}
+*/
+/*.Scroll-progress-indicator {
+    will-change: opacity, transform;
+    transition: all 0.5s;
+    left: -10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    padding: 2em;
+    transform: translateX(200%) translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Scroll-progress-indicator.visible {
+  transform: translateX(-100%) translateY(-50%);
+  opacity: 1;
+}
+
+#A {
+  background-color: crimson;
+}
+
+#B {
+  background-color: lighten(crimson, 10%);
+}
+
+#C {
+  background-color: lighten(crimson, 20%);
+}
+
+#D {
+  background-color: lighten(crimson, 30%);
+}
+
+#E {
+  background-color: lighten(crimson, 40%);
+}
+
+.Scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    opacity:  0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    outline: none;
+}
+
+.Scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Scroll-to-top:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+*/
+
+
+
+
+
+
+/* scroll nav original*/
+
+
+
+
+
+
 
 
 
