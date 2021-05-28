@@ -277,7 +277,26 @@ h3 {
 
 
 
+.links {
+    color: #777;
+    background-color:white;
+    padding:5px 80px 15px;
+    text-align: center;
+}
 
+.links i {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.links a:hover {
+  opacity: 0.3;
+}
 
 
 
