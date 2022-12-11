@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #fff; /* try #212121 also for dark mode */
+    --background-color: #212121;
+    --font: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+}
+
+/* Timeline Container */
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#wrapper {
+    width: 100%;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+/* Left-Outer Layer with the timeline border */
+.left-outer {
+    width: 50%;
+    float:left;
+    border: 1px solid red;
+    border-right: 2px solid #333;
+}
+
+/* Right-Outer Layer with the timeline border */
+.right-outer {
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.card-left {
+    position: relative;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    #max-width: 400px;
+}
+
+.card-right {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    #max-width: 400px;
+}
+
+.break-left {
+    position: relative;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    #max-width: 400px;
+    height: 10vh;
+    opacity: 0%;
+}
+
+.break-right {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    #max-width: 400px;
+    height: 10vh;
+    opacity: 0%;
+}
+
+.title-card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    #max-width: 400px;
+    height: 35vh;
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.break {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+/* Title of the card */
+.title-left {
+    color: lightskyblue;
+    position: relative;
+    text-align: right;
+}
+
+.title-right {
+    color: orangered;
+    position: relative;
+}
+
+.title {
+    color: orangered;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Timeline dot  */
+.title-left::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    right: -39px;
+    border: 3px solid lightskyblue;
+}
+
+.title-right::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+}
+
+img {
+    width: 100%;
+}
